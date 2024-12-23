@@ -32,7 +32,7 @@ export default function Home() {
     ]
 
     function Search() {
-        let filtered = tableData.filter((data) =>
+        const filtered = tableData.filter((data) =>
             data.name.toLowerCase().includes(searchInput.toLowerCase())
         )
         return filtered
